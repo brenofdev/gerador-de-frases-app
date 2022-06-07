@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  color: hsl(228, 45%, 44%);
+
+  background-color: #191F26;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 50rem;
+  height: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10rem;
+  
+  position: relative;
+
+  background-color: #2C3540;
+  border-radius: 2rem;
+}
+
+.advice {
+  position: absolute;
+  top: 4rem;
+
+  font-size: 1.8rem;
+  color: #50F296;
+}
+
+.advice-phrase {
+  padding: 0 4rem;
+
+  font-size: 2rem;
+  text-align: center;
+  color: #C1D0D9;
+}
+
+.separator {
+  position: absolute;
+  bottom: 4rem;
+}
+
+.dice {
+  width: 5rem;
+  height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: -2.5rem;
+
+  background-color: #50F296;
+  border-radius: 50%;
+
+  // cursor: pointer;
+}
+
+.dice button {
+  border: none;
+  border-style: none;
+  background: none;
+
+  cursor: pointer;
+}
+
+.icon-dice {
+  width: 2rem;
+}
+
+.attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50rem;
+
+  position: absolute;
+
+  font-size: 1.5rem;
+  line-height: 4rem;
+  color: white;
+}
+
+.attribution a {
+  margin-left: 0.3rem;
+
+  /* text-decoration: none; */
+  color: #50F296;
+}
+
