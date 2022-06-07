@@ -23,9 +23,9 @@ export function Generator() {
   return (
     
     <section className="container">
-
+ 
       <div className="advice">
-        <h4>Advice #{[text.slip?.id]}</h4>
+        <h3>Advice #{[text.slip?.id]}</h3>
       </div>
 
       <div className="advice-phrase">
