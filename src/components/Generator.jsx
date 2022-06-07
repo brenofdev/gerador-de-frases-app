@@ -1,16 +1,9 @@
 import { useState, useEffect } from 'react';
-import { AdvicePhrase } from './AdvicePhrase';
-// import { RepositoryItem } from "./RepositoryItem";
 
 import separator from '../assets/pattern-divider-desktop.svg';
 import dice from '../assets/icon-dice.svg';
 
 import '../styles/generator.scss';
-
-const advice = {
-  id: String,
-
-}
 
 export function Generator() {
   const [text, setText] = useState([])
@@ -18,7 +11,7 @@ export function Generator() {
   const fetchAdvice = async() => {
     const res = await fetch("https://api.adviceslip.com/advice")
     const data = await res.json()
-
+  
     // console.log(data)
     setText(data)
   }
@@ -30,8 +23,6 @@ export function Generator() {
   return (
     
     <section className="container">
-
-      {/* <AdvicePhrase advice={text}/> */}
 
       <div className="advice">
         <h4>Advice #{[text.slip?.id]}</h4>
@@ -51,8 +42,6 @@ export function Generator() {
         </button>
         
       </div>
-
-      {/* <button>adasda</button> */}
 
       <footer className="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
